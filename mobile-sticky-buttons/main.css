@@ -1,0 +1,68 @@
+.body {
+  position: relative;
+  font-size: 40px;
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 40px;
+}
+#fullNav {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: auto;
+  bottom: 0;
+}
+#bottomNav {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+  height: 15%;
+  bottom: 0;
+  width: 100%;
+}
+#navBar {
+  position: sticky;
+  margin-top: auto;
+  margin-bottom: 70px;
+  align-content: flex-end;
+  margin-left: auto;
+}
+#mainMenuButton {
+  border: 1px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-right: 60px;
+  background: url('images/list.png') no-repeat center center;
+  background-size: 50%;
+  background-color: rgb(101, 252, 71);
+}
+#mainMenuChildren {
+  display: flex;
+  max-height: 0px;
+  overflow: hidden;
+  flex-direction: column;
+  margin-top: auto;
+  margin-left: auto;
+  width: 100%;
+  transition: max-height 1.25s cubic-bezier(0, 0.47, 0.32, 1.94);
+}
+.mainMenuChild {
+  margin-top: auto;
+  margin-bottom: 30px;
+  align-content: flex-end;
+  margin-left: auto;
+}
+.mainMenuChildButton {
+  border: 1px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-right: 60px;
+  background: url('images/list.png') no-repeat center center;
+  background-size: 50%;
+  background-color: rgb(140, 71, 252);
+}
